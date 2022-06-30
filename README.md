@@ -45,5 +45,13 @@ function tr_convert(text, type) {
 
 # SAMPLE USAGES
 
+# Tüm harfleri uppercase dönüştürmek için
+tr_convert(text, 'uppercase');
+
+# Tüm harfleri lowercase dönüştürmek için
+tr_convert(text, 'lowercase');
+
+# İlk harfi uppercase kalan harfleri lowercase dönüştürmek için
+tr_convert(first_letter, 'uppercase') + tr_convert(last_letters, 'lowercase');
 
 ```
